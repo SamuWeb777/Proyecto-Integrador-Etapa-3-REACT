@@ -1,0 +1,430 @@
+@import'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root { /* ! Variables de color */
+    /* color */
+    --color-verde: #63745c;
+    --color-verde-clarito: rgb(144, 144, 98);
+    --color--negro-transparente:  rgba(34, 34, 34, 0.329);
+    --color--negro--nav: rgba(24, 24, 24, 0.575);
+    --color--blanco: #ffffff;
+    /* background */
+    --background: /* linear-gradient(180deg, #822779 0%, rgba(99, 10, 254, 0.00) 100%) */ #ddd;
+}
+body{
+    /*background-color: #448cd9;*/
+    font-family: 'Open Sans', sans-serif;
+    transition: .3s ease all;
+}
+.switch { /* Creamos el boton */
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid var(--color-verde-clarito);
+    border-radius: 100px;
+    background-color: var(--background);
+}
+
+.ul-modo .switch::before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: var(--color-verde-clarito);
+    left: 0;
+    right: unset;
+    margin: 1px;
+}
+
+.ul-modo .switch.active::before {
+    right: 0;
+    left: unset;
+}
+
+.ul-modo .switch.active {
+    background-color: var(--color--blanco);
+}
+
+
+body.active {
+    background-color: #1f242e;
+}
+
+
+
+body.active  main > div > p {
+    color: var(--background);
+}
+
+body.active 
+main > .main-index,
+.carousel-inner  {
+    color: var(--color--blanco);
+    border: 3px solid var(--color-verde-clarito);
+    background-color: #323947;
+}
+
+body.active .card {
+    background-color: #323947;
+    color: var(--color--blanco);
+    border: none;
+}
+
+body.active .contactos div {
+    background-color: #323947;
+    
+}
+
+body.active label {
+    color: var(--color--blanco);
+}
+
+body.active footer{
+    background-color: #323947;
+}
+
+body.active footer > p {
+    color: var(--color--blanco);
+}
+
+body.active .redes {
+    background-color: #323947;
+}
+
+body.active .nosotros {
+    color: var(--color--blanco);
+}
+body.active .contactos {
+    color: var(--color--blanco);
+}
+
+body.active .card-header {
+    background-color: #323947;
+    color: var(--color--blanco);
+}
+
+body.active .card-body {
+    background-color: #323947;
+}
+
+
+
+
+@media(max-width: 767px) {
+
+    body.active .carta-1:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    body.active .carta-2:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    body.active  .carta-3:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    body.active  .carta-4:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/*--------------------HEADER-----------------------*/
+.tachito {
+    background: none;
+    border: none;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    
+}
+.nav-item{
+    display: inline-block;
+    list-style: none;
+}
+.link{
+    
+    position: relative;
+}
+.link:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #db4444;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: widht;
+}
+.link:hover:after{
+width: 100%;
+right: 0;
+}
+.navegador{
+    
+    text-align: center;
+    margin-left: 270px;
+}
+.titulo-principal{
+    margin: auto;
+   text-align: center;
+}
+.tit-1{
+    font-weight: 800;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+
+/*-----------------------------*/
+.nosotros-iconos{
+    margin: 3em 0;
+}
+.nosotros-iconos i{
+    margin-right: 0.8em;
+    padding: 0;
+    color: #323232;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+.nosotros-iconos li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.nosotros-iconos i.ins:hover{
+    color: crimson;
+    transition: all .4s;
+}
+.nosotros-iconos i.fb:hover{
+    color: blue;
+    transition: all .4s;
+}
+.nosotros-iconos i.twi:hover{
+    color: cornflowerblue;
+    transition: all .4s;
+}
+.nosotros-iconos i.mail:hover{
+    color: red;
+    transition: all .4s;
+}
+
+.tarjetas img{
+    width: 65px;
+}
+ .cabece a{
+    color: white;
+    text-decoration: none;
+ }
+
+ .logo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+ }
+ .submit-button {
+    padding: 3px; /* Ajusta el espacio alrededor del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.submit-button i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}   
+/*------------------------CARRUSEL------------------------*/
+.carrusel{
+    padding: 0;
+}
+.imagen1{
+    max-height: 600px;
+
+}
+.titulo{
+    color: #323232;
+}
+/*----------------CONTACTOS-----------------------*/
+.contactos{
+    text-align: center;
+}
+.bloque-1{
+    text-align: start;
+    margin: auto;
+    width: fit-content;
+}
+.formulario{
+   width: 500px;
+   margin:  auto;
+}
+.formulario input{
+    background-color: ghostwhite;
+}
+.formulario textarea{
+    background-color: ghostwhite;
+}
+.cont-form{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 600px;
+}
+/*------------------------FOOTER-------------------------*/
+footer{
+    color: grey ;
+    background-color: black;
+    padding: auto;
+    
+}
+footer h2{
+    color: #fff;
+}
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+footer input{
+    border-radius: 5px;
+    border-color: white;
+    padding: 3px;
+    background-color: black;
+}
+
+.copyrigth{
+    text-align: center;
+    margin: auto;
+    color: grey;
+}
+.pie{     
+    margin: auto;
+    width: 80%;
+    
+}
+.aa{
+    margin-top: 20px;
+    margin: auto;
+}
+.aaa{
+    margin-top: 115px;
+}
+.google{
+    width: 50%;
+}
+/*--------------CATEGORIAS-----------------*/
+.categorias{
+    contain: paint;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    
+}
+.categorias h6{
+    color: #db4444;
+    margin-left: 10px;
+}
+.pestaña{
+    background-color:#db4444 ;
+    width: 10px;
+    border-radius: 3px;
+}
+.iconos{
+    border-radius: 5px;
+    height: 200px;
+    padding: 0;
+    columns: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icono-1{
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px;
+    width: 150px;
+    height: 130px;
+    text-align: center; 
+}
+.icono-1:hover{
+  background-color: #E07575;
+  transition: 0.5s;
+  color: aliceblue;
+  
+}
+.icono-1 i{
+    margin-top: 20px;
+    color: black;
+}
+
+/*---------------SERVICIOS-------------------*/
+.caract{
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 50px;
+    width: 80%;
+    display: flex;
+}
+.caract-1{
+    margin: auto;
+    text-align: center;
+    
+} 
+.caract i{
+    color: #fff;
+    border-radius: 100%;
+    padding: 30px;
+    background-color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration:underline ;
+}
+.titulo-nosotros{
+    text-decoration: none;
+}
+/*----------------seccion carritoo--------------*/
+
+.btn-pagar{
+    display: block;
+    width: 100%;
+    transition: .3s;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+}
+.btn-pagar:hover{
+    scale: 1.05;
+}
+.btn-agregar{
+    scale: 1.05;
+}
+
+/*seccion de responsive*/
+@media screen and (max-widht:850px) {
+    .caract{
+        display: block;
+    }
+} 
+
+.input-alta{
+    border: 1px solid black;
+     border-radius: 5px ;
+}

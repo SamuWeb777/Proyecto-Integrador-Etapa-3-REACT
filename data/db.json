@@ -1,0 +1,103 @@
+{
+  "productos": [
+    {
+      "id": 2,
+      "nombre": "Samsung",
+      "caracteristicas": "Procesador I7",
+      "precio": 960000,
+      "foto": "note-1.webp"
+    },
+    {
+      "id": 3,
+      "nombre": "PS5",
+      "caracteristicas": "Con juegos incluidos",
+      "precio": 580000,
+      "foto": "gamming-1.webp"
+    },
+    {
+      "id": 4,
+      "nombre": "Motorola",
+      "caracteristicas": "Inalambricos",
+      "precio": 80000,
+      "foto": "auricular-2.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Samsung",
+      "caracteristicas": "Memoria de 256GB",
+      "precio": 850000,
+      "foto": "celu-1.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Sillon gamer",
+      "caracteristicas": "nclinacion de 180° .",
+      "precio": 299000,
+      "foto": "gamming-2.webp"
+    },
+    {
+      "id": 7,
+      "nombre": "SmartWatch",
+      "caracteristicas": "reloj inteligente",
+      "precio": 95000,
+      "foto": "reloj-3.webp"
+    },
+    {
+      "id": 8,
+      "nombre": "Samsung",
+      "caracteristicas": "Camara de largo alcance",
+      "precio": 600000,
+      "foto": "celu-3.webp"
+    },
+    {
+      "id": 9,
+      "nombre": "AOC",
+      "caracteristicas": "Monitor IPS de 24 pul",
+      "precio": 200000,
+      "foto": "gamming-3.webp"
+    },
+    {
+      "id": 10,
+      "nombre": "Predator",
+      "caracteristicas": "100% gammer",
+      "precio": 850000,
+      "foto": "note7.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Auriculares motorola",
+      "caracteristicas": "Ultra resistentes",
+      "precio": 15000,
+      "foto": "auricular-1.png"
+    },
+    {
+      "id": 12,
+      "nombre": "Canon",
+      "caracteristicas": "Fotografias UHD",
+      "precio": 300000,
+      "foto": "camara-2.webp"
+    }
+  ],
+  "carrito": [
+    [
+      {
+        "id": 3,
+        "nombre": "PS5",
+        "caracteristicas": "Con juegos incluidos",
+        "precio": 580000,
+        "foto": "gamming-1.webp",
+        "cantidad": 1
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "nombre": "PS5",
+        "caracteristicas": "Con juegos incluidos",
+        "precio": 580000,
+        "foto": "gamming-1.webp",
+        "cantidad": 1
+      }
+    ]
+  ]
+}
